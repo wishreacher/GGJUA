@@ -20,14 +20,17 @@ public:
 	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	bool bIsBuilt = false;
+
 protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* BuildedTreeMeshComponent = nullptr;
+	UStaticMeshComponent* BuiltTreeMeshComponent = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* NotBuildedTreeMeshComponent = nullptr;
+	UStaticMeshComponent* NotBuiltTreeMeshComponent = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* InteractionCollision = nullptr;

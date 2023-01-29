@@ -6,12 +6,12 @@
 ABaseTower::ABaseTower()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	BuildedTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree"));
-	NotBuildedTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Basic Mesh"));
+	BuiltTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree"));
+	NotBuiltTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Basic Mesh"));
 	InteractionCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Interaction Collision"));
 	RootComponent = InteractionCollision;
-	NotBuildedTreeMeshComponent->SetupAttachment(GetRootComponent());
-	BuildedTreeMeshComponent->SetupAttachment(GetRootComponent());
+	NotBuiltTreeMeshComponent->SetupAttachment(GetRootComponent());
+	BuiltTreeMeshComponent->SetupAttachment(GetRootComponent());
 }
 
 void ABaseTower::BeginPlay()
