@@ -2,7 +2,6 @@
 
 
 #include "GGJUA/Actors/Characters/BaseUnit.h"
-
 #include "Components/SphereComponent.h"
 #include "Perception/AIPerceptionComponent.h"
 

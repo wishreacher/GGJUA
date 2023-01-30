@@ -20,4 +20,8 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float MaxHealth = 500.f;
+
+	float CurrentHealth;;
 };

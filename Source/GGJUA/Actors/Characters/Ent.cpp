@@ -12,7 +12,7 @@ AEnt::AEnt()
 void AEnt::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	CurrentHealth = MaxHealth;
 }
 
 void AEnt::Tick(float DeltaTime)
