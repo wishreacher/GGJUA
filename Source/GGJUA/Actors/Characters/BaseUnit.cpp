@@ -3,15 +3,22 @@
 
 #include "GGJUA/Actors/Characters/BaseUnit.h"
 
+#include "Components/SphereComponent.h"
+#include "Perception/AIPerceptionComponent.h"
+
 ABaseUnit::ABaseUnit()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
+	PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception"));
+	DetectionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("DetectionSphere"));
+	DetectionSphere->SetSphereRadius(DetectionRadius);
+	DetectionSphere->SetupAttachment(RootComponent);
 }
 
 void ABaseUnit::BeginPlay()
 {
 	Super::BeginPlay();
+	CurrentHealth = MaxHealth;
 	
 }
 
