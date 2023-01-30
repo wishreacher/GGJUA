@@ -64,6 +64,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float AttackRadius = 20.f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimMontage* AttackMontage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimMontage* HitMontage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* AttackSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* HitSound;
+	
 protected:
 	virtual void BeginPlay() override;
 
