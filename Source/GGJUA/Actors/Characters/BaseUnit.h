@@ -75,6 +75,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	USoundWave* HitSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	AActor* AttackTarget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector TargetLocation;
 	
 protected:
 	virtual void BeginPlay() override;
