@@ -23,5 +23,6 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float MaxHealth = 500.f;
 
-	float CurrentHealth;;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float CurrentHealth;
 };
