@@ -36,10 +36,10 @@ protected:
 	UBoxComponent* InteractionCollision = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* BuiltSound;
+	USoundBase* BuiltSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* DestroyedSound;
+	USoundBase* DestroyedSound;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float CostInMana = 0.f;

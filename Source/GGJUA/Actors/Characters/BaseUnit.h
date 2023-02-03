@@ -71,16 +71,16 @@ public:
 	UAnimMontage* HitMontage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* AttackSound;
+	USoundBase* AttackSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* HitSound;
+	USoundBase* HitSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* DeathSound;
+	USoundBase* DeathSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	USoundWave* AppearanceSound;
+	USoundBase* AppearanceSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* AttackTarget;
