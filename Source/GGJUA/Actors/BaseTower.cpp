@@ -17,6 +17,7 @@ ABaseTower::ABaseTower()
 void ABaseTower::BeginPlay()
 {
 	Super::BeginPlay();
+	CurrentHealth = MaxHealth;
 	
 }
 
