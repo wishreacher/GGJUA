@@ -34,6 +34,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* InteractionCollision = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* BuiltSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* DestroyedSound;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float CostInMana = 0.f;
@@ -45,6 +51,9 @@ protected:
 	float MaxHealth = 100.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float CurrentHealth = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float AttackRadius = 100.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -53,5 +62,5 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float AttackDamage = 20.f;
 private:
-	float CurrentHealth = 0.f;
+	
 };

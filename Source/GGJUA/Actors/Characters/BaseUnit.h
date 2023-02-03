@@ -77,6 +77,12 @@ public:
 	USoundWave* HitSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* DeathSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USoundWave* AppearanceSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* AttackTarget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
