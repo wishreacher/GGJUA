@@ -22,4 +22,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	USphereComponent* SphereComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool bIsStunned = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float StunnedSpeed = 200.f;
 };
