@@ -14,8 +14,12 @@ UCLASS()
 class GGJUA_API ASpiderUnit : public ABaseUnit
 {
 	GENERATED_BODY()
-	
+
+	ASpiderUnit();
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AEnt* EntReference = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USphereComponent* SphereComponent;
 };
