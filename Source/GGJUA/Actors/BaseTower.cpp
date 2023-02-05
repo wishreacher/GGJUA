@@ -6,7 +6,7 @@
 ABaseTower::ABaseTower()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	BuiltTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree"));
+	BuiltTreeMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Tree"));
 	NotBuiltTreeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Basic Mesh"));
 	InteractionCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Interaction Collision"));
 	RootComponent = InteractionCollision;

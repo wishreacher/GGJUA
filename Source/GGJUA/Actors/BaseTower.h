@@ -27,10 +27,16 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* BuiltTreeMeshComponent = nullptr;
+	USkeletalMeshComponent* BuiltTreeMeshComponent = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* NotBuiltTreeMeshComponent = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimMontage* ActivationMontage = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UAnimMontage* AttackMontage = nullptr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* InteractionCollision = nullptr;
